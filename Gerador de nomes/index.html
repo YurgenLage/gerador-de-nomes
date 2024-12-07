@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Nickname</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <h1>Gerador de Nickname</h1>
+        <form id="formulario" onsubmit="gerarNickname(event)">
+            <div class="input-group">
+                <label for="prefixo">Prefixo (opcional):</label>
+                <input type="text" id="prefixo" placeholder="Exemplo: Super">
+            </div>
+            <div class="input-group">
+                <label for="sufixo">Sufixo (opcional):</label>
+                <input type="text" id="sufixo" placeholder="Exemplo: X">
+            </div>
+            <button type="submit">Gerar Nickname</button>
+        </form>
+
+        <h2 id="nickname">Aqui vai o nickname gerado</h2>
+
+        <h3>Histórico</h3>
+        <ul id="historico"></ul>
+        <p>Histórico de Nicknames: <span id="count">0</span></p>
+    </div>
+
+    <footer>
+        <p>&copy; Desenvolvido por Yurgen Augusto Miranda Lage. Este conteúdo é exclusivamente para fins de aprendizagem.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
